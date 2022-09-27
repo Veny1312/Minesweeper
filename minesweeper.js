@@ -3,7 +3,7 @@ var rows = 10;
 var colums = 10;
 var clickedTile = 0;
 
-var mines = 5;
+var mines = 10;
 var minesLocation =  [];
 
 var gameOver = false;
@@ -140,7 +140,7 @@ myInterval = setInterval(minesLeft, 100);
 
 function minesLeft() {
   document.getElementById("mines-count").innerText = mines;
-  if (clickedTile == 95) {
+  if (clickedTile == 90) {
     showMines();
     if(!alert("Congratulations! You WON!")) {
       window.location.reload();
